@@ -10,7 +10,8 @@ const projects = [
     name: "Employe Data Fetching",
     technology: "Technology: React Js",
     descriptionn: "Fetching Data From Amazon Api",
-    github: "https://git-hub-fetch-api.vercel.app/",
+    live: "https://git-hub-fetch-api.vercel.app/",
+    github: "https://github.com/callmeyaseen/GitHub-Fetch-Api",
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const projects = [
     name: "Guess The Number",
     technology: "HTML CSS & Java Scripts",
     descriptionn: "This is just a game for learning purpose",
-    github: "https://guess-the-number-drab-kappa.vercel.app/",
+    github: "https://github.com/callmeyaseen/Guess-the-Number",
+    live: "https://guess-the-number-drab-kappa.vercel.app/",
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const projects = [
     name: "Dark & Light Mode",
     technology: "HTML,CSS & Java Scripts",
     descriptionn: "Building Responsive and interactive user interface",
-    github: "https://dark-light-mode-ecru.vercel.app/",
+    github: "https://github.com/callmeyaseen/Dark-Light-Mode",
+    live: "https://dark-light-mode-ecru.vercel.app/",
   },
 ];
 
@@ -43,7 +46,10 @@ function Projects() {
                     <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
                     <p className="text-gray-400 mb-4">{project.technology}</p>
                     <p className="text-gray-400 mb-4">{project.descriptionn}</p>
-                    <a href={project.github} className="inline-block bg-gradient-to-r from-green-400 to-blue-50 text-white px-4 py-2 rounded-full " target="_blank" rel="noopener noreferrer">github</a>
+                    <div className="flex justify-between">
+                    <a href={project.github} className=" cursor-pointer inline-block bg-gradient-to-r from-green-400 to-blue-50 text-white px-4 py-2 rounded-full  " target="_blank" rel="noopener noreferrer">github</a>
+                    <a href={project.live} className=" cursor-pointer inline-block bg-gradient-to-r from-green-400 to-blue-50 text-white px-4 py-2 rounded-full  " target="_blank" rel="noopener noreferrer">Live</a>
+                    </div>
                 </div>
             ))
         }
