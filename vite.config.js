@@ -1,18 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import staticCopy from 'vite-plugin-static-copy';
+import { viteStaticCopy } from 'vite-plugin-static-copy'; // Correct import for static copy
 
 export default defineConfig({
   plugins: [
-    react(), // Make sure React plugin is included if you're using React
-    staticCopy({
+    react(), // React plugin for Vite
+    viteStaticCopy({
       targets: [
         {
-          src: 'src/assets/*.png',
-          dest: 'assets' // Destination folder
+          src: 'src/assets/*.png', // Source path for assets
+          dest: 'assets' // Destination folder where assets will be copied
         }
       ]
     })
   ],
-  assetsInclude: ['**/*.png'], // This ensures that PNG files are included
+  assetsInclude: ['**/*.png'], // Ensure PNG files are included as assets
 });
