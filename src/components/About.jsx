@@ -1,6 +1,5 @@
 import React from "react";
-import hero from "../assets/hero.jpeg";
-import img from '../assets/img.png'
+import about from '../assets/about.jpg'
 function About() {
   return (
     <div className="bg-black text-white py-20 " id="about">
@@ -8,9 +7,9 @@ function About() {
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
-            src={img}
+            src={about}
             alt=""
-            className="mx-auto mb-8 w-72 h-80  object-cover transform transition-transform duration-300 hover:scale-105"
+            className="rounded-lg mx-auto mb-8 w-72 h-80  object-cover transform transition-transform duration-300 hover:scale-105"
           />
           <div className="flex-1">
             <p className="text-lg mb-8">
